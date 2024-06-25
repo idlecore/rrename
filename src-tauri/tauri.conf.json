@@ -15,6 +15,14 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "dialog": {
+          "all": false,
+          "ask": false,
+          "confirm": false,
+          "message": false,
+          "open": true,
+          "save": false
       }
     },
     "windows": [
@@ -30,14 +38,19 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "dev.idlecore.test",
+      "identifier": "dev.idlecore.tauri-rename",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
         "icons/128x128@2x.png",
         "icons/icon.icns",
         "icons/icon.ico"
-      ]
+      ],
+      "windows": {
+          "wix": {
+              "language": "en-US"
+          }
+      }
     }
   }
 }
